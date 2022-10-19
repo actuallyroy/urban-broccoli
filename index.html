@@ -14,6 +14,8 @@
       <input name="title" type="text" placeholder="Title">
       <label for="desc">Description</label>
       <textarea name="desc" type="text" placeholder="Description"></textarea>
+      <label for="place">Place</label>
+      <input name="place" type="text" placeholder="Place">
       <label for="lon">Longitude</label>
       <input name="lon" type="number" placeholder="Longitude">
       <label for="lat">Latitude</label>
@@ -24,12 +26,13 @@
         <button type="submit">Next</button>
       </div>
     </form>
-    <div class="map-cont">
+    <div class="map-cont" id="map-cont">
+      <div id="title">{{title}}</div>
       <img height="500" width="500" src="./assets/images/test-image.png" alt="Map">
       <div class="bottom-desc-bar" id="target">
         <div class="desc-left"><p id="desc">{{description}}</p></div>
         <div class="desc-right">
-          <div id="title">{{title}}</div>
+          <div id="place">{{place}}</div>
           <div id="lonNlat">{{lonNlat}}</div>
           <div id="date">{{date}}</div>
         </div>

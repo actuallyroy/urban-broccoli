@@ -90,8 +90,12 @@ button:active{
   margin: 0;
 }
 
-
 #title{
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+#place{
   letter-spacing: 2px;
   margin-bottom: 5px; 
 }

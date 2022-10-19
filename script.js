@@ -16,14 +16,20 @@ const data = {
     }
   },
   date: urlParams.get("date") || "",
+  place: urlParams.get("place") || "",
 };
 
+document.getElementById("map-cont").style.display = "none";
+
+if (data.date && data.title && data.lonNlat && data.description) {
+  document.getElementById("map-cont").style.display = "block"
+}
 
 
 function render() {
-  var template = document.getElementById("target").innerHTML
+  var template = document.getElementById("map-cont").innerHTML
   var rendered = Mustache.render(template, data);
-  document.getElementById("target").innerHTML = rendered;
+  document.getElementById("map-cont").innerHTML = rendered;
 }
 
 render();
