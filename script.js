@@ -1,7 +1,7 @@
 import Mustache from "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.js";
 
 const urlParams = new URLSearchParams(window.location.search);
-
+const mapCont = document.getElementById("map-cont");
 
 const data = {
   description: urlParams.get("desc") || "",
@@ -19,10 +19,10 @@ const data = {
   place: urlParams.get("place") || "",
 };
 
-document.getElementById("map-cont").style.display = "none";
+mapCont.style.display = "none";
 
-if (data.date && data.title && data.lonNlat && data.description) {
-  document.getElementById("map-cont").style.display = "block"
+if (data.date && data.title && data.lonNlat && data.description && data.place) {
+  mapCont.style.display = "block"
 }
 
 
