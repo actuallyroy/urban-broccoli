@@ -1,0 +1,110 @@
+@import url(/assets/css/fonts.css);
+
+body{
+  margin: 0;
+  background-color: #e4eaf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-cont{
+  display: flex;
+  font-family: "Avanir Light";
+  font-weight: 800;
+  font-size: 13px;
+}
+
+form, .map-cont{
+  background-color: white;
+  border-radius: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-right: 20px;
+  height: fit-content;
+}
+
+label{
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input, textarea{
+  margin-bottom: 10px;
+  width: 250px;
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid black;
+  font-family: inherit;
+  border-radius: 3px;
+}
+
+.submit-btn{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  padding: 10px;
+  width: 100px;
+  background-color: #c1e0bd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 200ms;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+
+button:active{
+  background-color: #7c9179;
+}
+
+.map-cont{
+  width: 500px;
+  padding: 30px 30px 10px 30px;
+}
+
+.bottom-desc-bar{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc-right{
+  text-align: right;
+}
+
+#desc{
+  width: 180px;
+  text-align: center;
+  margin: 0;
+}
+
+
+#title{
+  letter-spacing: 2px;
+  margin-bottom: 5px; 
+}
+
+#lonNlat{
+  font-family: "Futura Light";
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  font-weight: 100;
+  color: #989898;
+}
+
+#date{
+  font-family: "Futura Std Light Condensed";
+}
+

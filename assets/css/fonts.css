@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Avanir Light";
+  src: url(../fonts/AvenirLight.otf);
+}
+@font-face {
+  font-family: "Futura Light";
+  src: url(../fonts/FuturaLight.otf);
+}
+
+@font-face {
+  font-family: "Futura Std Light Condensed";
+  src: url(../fonts/FuturaStdLightCondensed.ttf);
+}
